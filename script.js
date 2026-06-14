@@ -1,6 +1,7 @@
 (function () {
   'use strict';
 
+  var topNav = document.getElementById('topNav');
   var menuToggle = document.getElementById('menuToggle');
   var mobileDrawer = document.getElementById('mobileDrawer');
   var mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
@@ -64,6 +65,16 @@
     });
   });
 
+  /* Header scroll effect */
+  function handleScroll() {
+    if (topNav) {
+      topNav.classList.toggle('scrolled', window.scrollY > 50);
+    }
+    updateActiveNav();
+  }
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+
   /* Active nav on scroll */
   function updateActiveNav() {
     var scrollPos = window.scrollY + 200;
@@ -118,10 +129,8 @@
     fadeObserver.observe(el);
   });
 
-  window.addEventListener('scroll', updateActiveNav, { passive: true });
-
   function handleResize() {
-    if (window.innerWidth > 1080) {
+    if (window.innerWidth > 768) {
       closeMobileMenu();
     }
 
@@ -139,6 +148,7 @@
 
   window.addEventListener('resize', handleResize);
 
+  handleScroll();
   updateActiveNav();
   activateTab(0);
   handleResize();
