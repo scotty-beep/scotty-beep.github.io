@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="소프트웨어 개발자 김민수의 자기소개 페이지">
+  <title>김민수 | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to Content</a>
+
+  <div id="content" class="page">
+    <!-- Left Sidebar -->
+    <header class="side-nav">
+      <a href="#" class="logo" aria-label="home">
+        <span class="logo-char">김</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ol class="nav-list">
+          <li><a href="#about" class="nav-link"><span>01.</span> About</a></li>
+          <li><a href="#experience" class="nav-link"><span>02.</span> Experience</a></li>
+          <li><a href="#personality" class="nav-link"><span>03.</span> Personality</a></li>
+          <li><a href="#goals" class="nav-link"><span>04.</span> Goals</a></li>
+        </ol>
+      </nav>
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com" target="_blank" rel="noreferrer noopener" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Mobile Nav Toggle -->
+    <div class="mobile-nav">
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span class="ham-box">
+          <span class="ham-inner"></span>
+        </span>
+      </button>
+      <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <nav aria-label="Mobile navigation">
+          <ol class="mobile-nav-list">
+            <li><a href="#about" class="mobile-nav-link"><span>01.</span> About</a></li>
+            <li><a href="#experience" class="mobile-nav-link"><span>02.</span> Experience</a></li>
+            <li><a href="#personality" class="mobile-nav-link"><span>03.</span> Personality</a></li>
+            <li><a href="#goals" class="mobile-nav-link"><span>04.</span> Goals</a></li>
+          </ol>
+        </nav>
+      </aside>
+    </div>
+
+    <!-- Email Sidebar -->
+    <div class="email-side">
+      <a href="mailto:minsu.kim@email.com">minsu.kim@email.com</a>
+    </div>
+
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero" id="hero">
+        <p class="hero-overline">안녕하세요, 제 이름은</p>
+        <h1 class="hero-name">김민수입니다.</h1>
+        <h2 class="hero-tagline">사용자에게 가치 있는 서비스를 만드는 개발자.</h2>
+        <p class="hero-desc">
+          저는 대학에서 컴퓨터공학을 전공하며 프로그래밍의 기초를 다졌고,
+          졸업 후 2년간 스타트업에서 웹 개발 업무를 담당했습니다.
+          빠르게 변화하는 IT 업계에서 새로운 기술을 학습하고 적용하는 것에
+          큰 흥미를 느끼며, 특히 사용자 경험을 개선하는 기술적 솔루션을
+          찾는 것을 좋아합니다.
+        </p>
+        <a class="cta-button" href="#about">더 알아보기</a>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <h2 class="numbered-heading">
+          <span class="heading-number">01.</span>
+          <span class="heading-text">About</span>
+          <span class="heading-line"></span>
+        </h2>
+        <div class="about-content">
+          <p>
+            소프트웨어 개발자로서 사용자에게 가치 있는 서비스를 제공하고 싶은
+            <a href="#hero" class="inline-link">김민수</a>입니다.
+            혁신적인 기술력과 우수한 개발 문화로 업계에서 인정받는 환경에서
+            저의 기술적 역량을 더욱 발전시키고 의미 있는 프로젝트에 기여하고 싶습니다.
+          </p>
+          <p>
+            개발자로서 항상 사용자의 관점에서 생각하려 노력합니다.
+            아무리 기술적으로 뛰어난 코드라도 실제 사용자에게 도움이 되지 않는다면
+            의미가 없다고 생각합니다.
+          </p>
+          <p class="motto-inline">
+            <em>"기술은 사람을 위해 존재한다"</em> — 사용자가 더 편리하고 효율적으로
+            업무를 처리할 수 있도록 돕는 것이 개발자의 사명이라고 믿습니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <h2 class="numbered-heading">
+          <span class="heading-number">02.</span>
+          <span class="heading-text">Experience</span>
+          <span class="heading-line"></span>
+        </h2>
+        <div class="jobs-list">
+          <div class="jobs-tabs" role="tablist" aria-label="Experience tabs">
+            <button class="job-tab active" role="tab" aria-selected="true" aria-controls="panel-0" id="tab-0">
+              <span class="job-tab-label">
+                <span class="job-title">스타트업 웹 개발</span>
+                <span class="job-company">· 스타트업</span>
+              </span>
+              <span class="job-range">2022 — 2024</span>
+            </button>
+            <button class="job-tab" role="tab" aria-selected="false" aria-controls="panel-1" id="tab-1">
+              <span class="job-tab-label">
+                <span class="job-title">교내 해커톤 우수상</span>
+                <span class="job-company">· 지역 상권 활성화 앱</span>
+              </span>
+              <span class="job-range">대학 3학년</span>
+            </button>
+            <button class="job-tab" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2">
+              <span class="job-tab-label">
+                <span class="job-title">학회 멘토링</span>
+                <span class="job-company">· 컴퓨터공학과 학회</span>
+              </span>
+              <span class="job-range">4년간</span>
+            </button>
+          </div>
+          <div class="jobs-panels">
+            <div class="job-panel" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
+              <h3>
+                <span>웹 개발자</span>
+                <span class="job-company-heading">
+                  <a href="#" class="inline-link">스타트업</a>
+                </span>
+              </h3>
+              <p class="job-range-mobile">2022 — 2024</p>
+              <ul>
+                <li>웹 서비스 프론트엔드 및 백엔드 개발을 담당하며 사용자 경험 개선에 집중했습니다.</li>
+                <li>새로운 기술 트렌드를 빠르게 학습하고 실무에 적용하여 서비스 품질을 향상시켰습니다.</li>
+                <li>개발자, 디자이너, 기획자와 협업하며 공동의 목표를 달성하는 팀워크를 발휘했습니다.</li>
+              </ul>
+              <ul class="tech-list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>HTML &amp; CSS</li>
+              </ul>
+            </div>
+            <div class="job-panel hidden" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+              <h3>
+                <span>팀장</span>
+                <span class="job-company-heading">
+                  <a href="#" class="inline-link">교내 해커톤</a>
+                </span>
+              </h3>
+              <p class="job-range-mobile">대학 3학년 · 48시간</p>
+              <ul>
+                <li>5명의 팀원과 함께 48시간 동안 React Native로 모바일 앱을 완성하여 우수상을 수상했습니다.</li>
+                <li>백엔드 API 설계부터 프론트엔드 구현까지 전 과정에 참여하며 풀스택 개발 경험을 쌓았습니다.</li>
+                <li>짧은 시간 내에 팀원들의 역량을 파악하고 업무를 효율적으로 분배하는 리더십을 발휘했습니다.</li>
+              </ul>
+              <ul class="tech-list">
+                <li>React Native</li>
+                <li>API 설계</li>
+                <li>풀스택</li>
+                <li>리더십</li>
+              </ul>
+            </div>
+            <div class="job-panel hidden" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+              <h3>
+                <span>프로그래밍 멘토</span>
+                <span class="job-company-heading">
+                  <a href="#" class="inline-link">컴퓨터공학과 학회</a>
+                </span>
+              </h3>
+              <p class="job-range-mobile">대학교 4년간</p>
+              <ul>
+                <li>후배들에게 프로그래밍을 가르치는 멘토링을 진행했습니다.</li>
+                <li>복잡한 개념을 쉽게 설명하는 능력을 기를 수 있었습니다.</li>
+                <li>현재 팀 내 코드 리뷰와 기술 공유에 큰 도움이 되고 있습니다.</li>
+              </ul>
+              <ul class="tech-list">
+                <li>멘토링</li>
+                <li>코드 리뷰</li>
+                <li>기술 공유</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personality -->
+      <section class="section" id="personality">
+        <h2 class="numbered-heading">
+          <span class="heading-number">03.</span>
+          <span class="heading-text">Personality</span>
+          <span class="heading-line"></span>
+        </h2>
+        <div class="personality-content">
+          <div class="personality-block">
+            <h3 class="sub-heading">장점</h3>
+            <ul class="feature-list">
+              <li>
+                <strong>꾸준한 학습 의지</strong> — 새로운 기술 트렌드에 관심이 많아
+                개인 시간을 활용해 온라인 강의를 수강하고 사이드 프로젝트를 진행합니다.
+              </li>
+              <li>
+                <strong>협업과 소통</strong> — 팀 프로젝트에서 다른 개발자, 디자이너,
+                기획자와 원활히 소통하며 공동의 목표를 달성하는 것을 중요하게 생각합니다.
+              </li>
+              <li>
+                <strong>문제 해결 지향적</strong> — 복잡한 버그나 기술적 이슈에 직면했을 때
+                포기하지 않고 다양한 접근 방법을 시도하여 해결책을 찾습니다.
+              </li>
+            </ul>
+          </div>
+          <div class="personality-block">
+            <h3 class="sub-heading">단점 &amp; 개선</h3>
+            <p>
+              <strong>완벽주의 성향</strong> — 때로는 코드의 완성도에 지나치게 집착하여
+              일정에 영향을 줄 수 있습니다. 이를 개선하기 위해 우선순위를 명확히 하고
+              적정 수준의 완성도를 목표로 하는 연습을 하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Goals -->
+      <section class="section" id="goals">
+        <h2 class="numbered-heading">
+          <span class="heading-number">04.</span>
+          <span class="heading-text">Goals</span>
+          <span class="heading-line"></span>
+        </h2>
+        <ul class="projects-list">
+          <li class="project-item">
+            <div class="project-content">
+              <p class="project-overline">단기</p>
+              <h3 class="project-title">
+                <a href="#" class="inline-link">팀 적응 &amp; 업무 성실 수행</a>
+              </h3>
+              <div class="project-desc">
+                <p>
+                  귀사의 개발 문화와 코딩 컨벤션에 빠르게 적응하여 팀의 일원으로서
+                  역할을 다하겠습니다. 맡은 업무를 성실히 수행하면서 비즈니스 도메인에
+                  대한 이해도를 높이고, 기존 팀원들과의 협업을 통해 개발 실력을 향상시키겠습니다.
+                </p>
+              </div>
+              <ul class="tech-list">
+                <li>적응</li>
+                <li>협업</li>
+                <li>도메인 이해</li>
+              </ul>
+            </div>
+            <div class="project-image">
+              <div class="project-image-inner">
+                <span>01</span>
+              </div>
+            </div>
+          </li>
+          <li class="project-item">
+            <div class="project-content">
+              <p class="project-overline">중장기</p>
+              <h3 class="project-title">
+                <a href="#" class="inline-link">기술 리더로의 성장</a>
+              </h3>
+              <div class="project-desc">
+                <p>
+                  기술 리더로 성장하여 주니어 개발자들을 멘토링하고, 새로운 기술 도입과
+                  개발 프로세스 개선에 기여하겠습니다. 클라우드 기술과 마이크로서비스
+                  아키텍처 전문성을 쌓아 서비스의 확장성과 안정성 향상에 기여하겠습니다.
+                </p>
+              </div>
+              <ul class="tech-list">
+                <li>멘토링</li>
+                <li>Cloud</li>
+                <li>Microservices</li>
+              </ul>
+            </div>
+            <div class="project-image">
+              <div class="project-image-inner">
+                <span>02</span>
+              </div>
+            </div>
+          </li>
+          <li class="project-item">
+            <div class="project-content">
+              <p class="project-overline">궁극적 비전</p>
+              <h3 class="project-title">
+                <a href="#" class="inline-link">혁신적인 서비스 개발</a>
+              </h3>
+              <div class="project-desc">
+                <p>
+                  함께 성장하여 IT 업계에서 인정받는 개발자가 되고, 사용자에게 진정한
+                  가치를 제공하는 혁신적인 서비스 개발에 핵심적인 역할을 담당하고 싶습니다.
+                </p>
+              </div>
+              <ul class="tech-list">
+                <li>혁신</li>
+                <li>사용자 가치</li>
+                <li>성장</li>
+              </ul>
+            </div>
+            <div class="project-image">
+              <div class="project-image-inner">
+                <span>03</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Loosely designed in
+          <a href="https://www.figma.com/" target="_blank" rel="noreferrer noopener" class="inline-link">Figma</a>
+          and coded in
+          <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener" class="inline-link">Visual Studio Code</a>.
+          Built with
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer noopener" class="inline-link">HTML</a>,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer noopener" class="inline-link">CSS</a>
+          &amp;
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer noopener" class="inline-link">JavaScript</a>.
+        </p>
+        <p class="footer-credit">Inspired by Brittany Chiang</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
